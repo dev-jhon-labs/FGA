@@ -100,7 +100,11 @@ class Locations @Inject constructor(
     val autoItemUseTeapotClick = Location(346, 806).xFromCenter()
     val autoItemUseStormPodRegion = Region(-203, 766, 100, 80).xFromCenter()
     val autoItemUseTeapotRegion = Region(296, 766, 100, 80).xFromCenter()
-    val autoItemUseSingleRegion = Region(436, 1320, 100, 80).xFromCenter()
+    val autoItemUseSingleRegion =
+        (if (isWide)
+            Region(642, 1257, 100, 80)
+        else Region(436, 1320, 100, 80))
+            .xFromCenter()
     val autoItemUseCloseClick = Location(0, 1090).xFromCenter()
 
     val selectedPartyRegion = Region(-370, 62, 740, 72).xFromCenter()
