@@ -199,5 +199,5 @@ class BattleConfigCore(
 
     val useStormPod = maker.bool("use_storm_pod")
     val useTeapot = maker.bool("use_teapot")
-    val autoItemUsePopup = maker.bool("auto_item_use_popup", true)
+    val autoItemUsePopup = maker.bool("auto_item_use_popup")
 }
